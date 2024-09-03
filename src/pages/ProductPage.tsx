@@ -8,7 +8,7 @@ const ProductsPage = () => {
     const { data: products } = useGetProductsQuery({limit:limitAndSkipData.limit,skip:limitAndSkipData.skip});
 
 
-    console.log({limit:limitAndSkipData.limit,skip:limitAndSkipData.skip});
+    // console.log({limit:limitAndSkipData.limit,skip:limitAndSkipData.skip});
     
     interface productInterface {
         id: number,
@@ -26,8 +26,8 @@ const ProductsPage = () => {
     return (
        <>
         <div className='flex flex-wrap justify-center'>
-            {products?.products.map((product: productInterface) => {
-                return <ProductComponent data={product} />
+            {products?.products.map((product: productInterface,index:number) => {
+                return <ProductComponent key={index} data={product} />
             })}
         </div>
         <div className='my-6'>

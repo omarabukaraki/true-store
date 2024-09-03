@@ -16,7 +16,7 @@ const ProductComponent= ({data}:any) => {
     const productData:productInterface = data;    
   
     return (
-        <div className='w-1/4 h-[30rem] m-4 border-[0.01rem] rounded-md' >
+        <div className='w-[20%] h-[30rem] m-4 border-[0.01rem] rounded-md' >
             <div className="w-full h-[75%] bg-gray-100 p-6">
                 <img className='w-full h-full  object-cover' src={productData.images[0]} alt={''} />
             </div>
