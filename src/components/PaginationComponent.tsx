@@ -38,7 +38,7 @@ export function PaginationComponent() {
                 </PaginationItem>
                 {
                     paginationCount.map((pageNumber: number, index: number) => {
-                        return <PaginationItem key={index} >
+                        return <PaginationItem className="cursor-pointer" key={index} >
                             <PaginationLink isActive={skipValue === pageNumber ? true : false} onClick={() => {
                                 handleNavigate(pageNumber)
                             }}>{pageNumber}</PaginationLink>

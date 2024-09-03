@@ -14,11 +14,11 @@ interface productInterface{
 
 const ProductComponent= ({data}:any) => {
     const productData:productInterface = data;    
-  
+    
     return (
         <div className='w-[20%] h-[30rem] m-4 border-[0.01rem] rounded-md' >
             <div className="w-full h-[75%] bg-gray-100 p-6">
-                <img className='w-full h-full  object-cover' src={productData.images[0]} alt={''} />
+                <img className='w-full h-full  object-cover'  src={productData.images[0]} alt={''} />
             </div>
             <div className="h-[25%] p-2 flex flex-col justify-between">
                 <h1 className='text-base'>{productData.title}</h1>
