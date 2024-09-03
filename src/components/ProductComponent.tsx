@@ -24,7 +24,7 @@ const ProductComponent= ({data}:any) => {
             </div>
             <div className="h-[25%] p-2 flex flex-col justify-between">
                 <h1 className='text-base'>{productData.title}</h1>
-                <p className="text-gray-500">{productData.description}</p>
+                <p className="text-gray-500 line-clamp-3 overflow-ellipsis">{productData.description}</p>
                 <p className="text-base">${productData.price}</p>
             </div>
         </div>
