@@ -1,4 +1,6 @@
 import React from 'react'
+import storeImage from '../../public/st.png'
+import Image from 'next/image'
 
 const NavBar = () => {
     return (
@@ -21,11 +23,16 @@ const NavBar = () => {
                             </button>
                         </div>
                         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                            <div className="flex flex-shrink-0 items-center">
-                                <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
+                            <div className="flex flex-shrink-0 items-center  w-16 h-16">
+                                <Image
+                                    src={storeImage}
+                                    alt="Your Company"
+                                    height={60} 
+                                    width={60} 
+                                />
                             </div>
-                            <div className="hidden sm:ml-6 sm:block">
-                                <div className="flex space-x-4">
+                            <div className="hidden sm:ml-6 sm:flex place-items-center">
+                                <div className="flex  space-x-4">
                                     <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-900 hover:text-white" aria-current="page">Dashboard</a>
                                     <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-900 hover:text-white">Team</a>
                                     <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-900 hover:text-white">Projects</a>
