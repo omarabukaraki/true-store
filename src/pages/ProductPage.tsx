@@ -16,13 +16,13 @@ const ProductsPage = () => {
     return (
         <>
             {
-                // products && products.products.length !== 0 && isFetching !== true ? <>
-                //     <div className='flex flex-wrap justify-center'>
-                //         {products.products.map((product: any, index: number) => {
-                //             return <ProductComponent key={index} data={product} />
-                //         })}
-                //     </div>
-                // </> : <LoadingPage />
+                products && products.products.length !== 0 && isFetching !== true ? <>
+                    <div className='flex flex-wrap justify-center'>
+                        {products.products.map((product: any, index: number) => {
+                            return <ProductComponent key={index} data={product} />
+                        })}
+                    </div>
+                </> : <LoadingPage />
             }
             <div className='my-6 flex justify-center'>
                 <button onClick={scrollToTop}><PaginationComponent /> </button>
