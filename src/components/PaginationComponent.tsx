@@ -27,9 +27,11 @@ export function PaginationComponent() {
             let adder = index - 3;
             if (pageN === index && paginationCount[0] === index - 2) {
                 setPaginationCount([3 + adder, 4 + adder, 5 + adder]);
+                break;
             }
             else if (paginationCount[0] === pageN + 1 && paginationCount[0] === index) {
                 setPaginationCount([1 + adder, 2 + adder, 3 + adder]);
+                break;
             }
         }
     }
