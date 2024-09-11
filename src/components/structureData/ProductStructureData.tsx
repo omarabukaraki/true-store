@@ -32,6 +32,7 @@ const ProductStructureData = ({ productData }: any) => {
                         priceCurrency: 'USD',
                         priceValidUntil: review,
                         url: productData.thumbnail,
+                        author:'omar abu karaki',
                         seller: {
                             name: review.reviewerName,
                         },
