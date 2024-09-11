@@ -113,16 +113,16 @@ const Footer = () => {
                                 Useful links
                             </h6>
                             <p className="mb-4">
-                                <a href="#!">Pricing</a>
+                                <a href="#">Pricing</a>
                             </p>
                             <p className="mb-4">
-                                <a href="#!">Settings</a>
+                                <a href="#">Settings</a>
                             </p>
                             <p className="mb-4">
-                                <a href="#!">Orders</a>
+                                <a href="#">Orders</a>
                             </p>
                             <p>
-                                <a href="#!">Help</a>
+                                <a href="#">Help</a>
                             </p>
                         </div>
                         <div>
