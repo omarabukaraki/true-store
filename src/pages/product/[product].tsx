@@ -5,7 +5,7 @@ import { useGetProductsQuery } from '../api/productsSlice'
 import { useRouter } from 'next/router'
 import LoadingPage from '../LoadingPage'
 
-const product = () => {
+const Product = () => {
     const { data} = useGetProductsQuery('');
     const { query } = useRouter();
     const { product } = query;
@@ -27,4 +27,4 @@ const product = () => {
     )
 }
 
-export default product
+export default Product
